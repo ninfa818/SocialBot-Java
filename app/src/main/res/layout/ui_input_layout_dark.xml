@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/llt_input_back.dark" >
+
+        <ImageView
+            android:id="@+id/img_input_header"
+            style="@style/img_input_header"/>
+
+        <LinearLayout style="@style/llt_input_spec.dark"/>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp_input"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:ccp_textSize="14dp"
+            app:ccp_contentColor="@color/colorWhite"
+            app:ccpDialog_textColor="@color/colorWhite"
+            app:ccpDialog_backgroundColor="@color/colorNewDark"
+            app:ccpDialog_keyboardAutoPopup="false"
+            app:ccp_showNameCode="false"
+            app:ccp_defaultNameCode="ZA"/>
+
+        <EditText
+            android:id="@+id/txt_input"
+            style="@style/txt_input.dark"/>
+
+        <ImageView
+            android:id="@+id/img_input_edit"
+            android:layout_marginEnd="12dp"
+            style="@style/img_input_header"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_edit"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_media_layout"
+    android:background="@color/colorBackWhite"
+    android:textColor="@color/white"
+    android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10.4dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girlreading"/>
+
+        <ImageView
+            android:id="@+id/play_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_play_circle_outline_white_48dp"
+            android:visibility="gone"/>
+</RelativeLayout>
+

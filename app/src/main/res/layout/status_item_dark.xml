@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/status_relayout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/story_cardview"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/background_hd" />
+
+        <com.hostcart.socialbot.views.TextViewWithShapeBackground
+            android:id="@+id/text_status"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rectangle_bg_status"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="5"
+            android:padding="2dp"
+            android:text="Hello World"
+            android:textColor="@color/colorWhite"
+            android:textSize="7sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_gradient">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0.5dp"
+                android:src="@drawable/img1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:text="Your Name"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackWhite"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activities.VerifyActivity">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/logo"/>
+
+    <LinearLayout
+        android:id="@+id/llt_verify_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.hostcart.socialbot.views.InputLayout
+            android:id="@+id/ilt_verify_phone"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:src="@drawable/ic_phone"
+            app:hint="Phone Number"
+            app:isccp="true"
+            app:inputType="Phone"/>
+
+        <Button
+            android:id="@+id/btn_verify_send"
+            style="@style/btn_back.dark"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/verify_send_code"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_verify_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_code"
+            android:textColor="@color/dark_gray"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lbl_verify_detail"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_code_detail"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray" />
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/otp_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:height="60dp"
+            app:width="45dp"
+            app:bar_enabled="true"
+            app:bar_active_color="@color/black"
+            app:bar_inactive_color="@color/dark_gray"
+            app:bar_error_color="@color/red"
+            app:bar_height="2dp"
+            app:length="6"
+            app:otp_text_size="28dp"/>
+
+        <TextView
+            android:id="@+id/lbl_verify_resend"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_resend_code"
+            android:textColor="@color/dark_gray"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

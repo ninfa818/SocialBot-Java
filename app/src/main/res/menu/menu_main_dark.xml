@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_item"
+        android:icon="@drawable/ic_chat_robot_white"
+        android:title="@string/normal_chatbot"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/meet_item"
+        android:icon="@drawable/ic_meeting"
+        android:title="@string/meeting"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/go_profile_item"
+        android:icon="@drawable/profile"
+        android:title="@string/new_group"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/new_group_item"
+        android:icon="@drawable/ic_group_add"
+        android:title="@string/new_group"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/new_broadcast_item"
+        android:icon="@drawable/ic_broadcast"
+        android:title="@string/new_broadcast"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/invite_item"
+        android:icon="@drawable/ic_person_add"
+        android:title="@string/invite"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/settings_item"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/Settings"
+        app:showAsAction="never" />
+
+
+</menu>

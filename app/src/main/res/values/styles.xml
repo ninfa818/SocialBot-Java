@@ -1,0 +1,281 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:actionBarStyle">@style/MyActionDarkBar</item>
+        <item name="android:navigationBarColor">@color/colorNew</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="MyActionDarkBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorBackWhite</item>
+        <item name="colorPrimaryDark">@color/colorBackWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/colorBackWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:actionBarStyle">@style/MyActionLightBar</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="MyActionLightBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/colorBackWhite</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="MaterialAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/colorBackWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="MaterialAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:statusBarColor">@color/colorBackWhite</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="PreferenceScreen" parent="AppTheme">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="PreferenceScreenLight" parent="AppThemeLight">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AlertDialogDark" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonDarkStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonDarkStyle</item>
+    </style>
+
+    <style name="NegativeButtonDarkStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="NeutralButtonDarkStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="AlertDialogLight" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonLightStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonLightStyle</item>
+    </style>
+
+    <style name="NegativeButtonLightStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="NeutralButtonLightStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SplashTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeLight.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemeLight.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="actionBarItemBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <item name="android:statusBarColor">@color/transparent</item>
+    <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CollapseToolbar">
+        <item name="android:textColor">#00000000</item>
+        <item name="android:background">@drawable/bg_tv</item>
+    </style>
+
+    <style name="ProfilePhotoToolbarStyle">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="ProfilePhotoToolbarStyleLight">
+        <item name="actionMenuTextColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+    </style>
+
+    <style name="SentMessageTimeTextStyle" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/sent_message_time_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="ReceivedMessageTimeTextStyle" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/received_message_time_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorBlack</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/colorBlack</item>
+    </style>
+
+    <style name="FontPath.Italic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_italic.ttf</item>
+    </style>
+
+    <style name="FontPath.Regular" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_regular.ttf</item>
+    </style>
+
+    <style name="FontPath.Medium" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_medium.ttf</item>
+    </style>
+
+    <style name="FontPath.Light" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_light.ttf</item>
+    </style>
+
+    <style name="FontPath.SemiBold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/montserrat_semi_bold.ttf</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeTopRight">15dp</item>
+    </style>
+
+    <style name="llt_input_back">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="llt_input_back.dark">
+        <item name="android:background">@drawable/input_dark_8_fill</item>
+    </style>
+
+    <style name="llt_input_back.light">
+        <item name="android:background">@drawable/input_light_8_fill</item>
+    </style>
+
+    <style name="llt_input_spec">
+        <item name="android:layout_marginStart">12sp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="llt_input_spec.dark">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="llt_input_spec.light">
+        <item name="android:background">@color/colorNewDark</item>
+    </style>
+
+    <style name="img_input_header">
+        <item name="android:layout_marginStart">12sp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="txt_input">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="txt_input.dark">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/text_color_grey</item>
+    </style>
+
+    <style name="txt_input.light">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/text_color_grey</item>
+    </style>
+
+    <style name="btn_back">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/btn_back_8_fill</item>
+    </style>
+
+    <style name="btn_back.dark">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="btn_back.light">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+</resources>

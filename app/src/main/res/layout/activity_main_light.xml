@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackWhite"
+    android:id="@+id/root">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackWhite"
+        android:theme="@style/AppThemeLight.NoActionBar.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            android:theme="@style/AppThemeLight"
+            app:popupTheme="@style/AppThemeLight.NoActionBar.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tv_selected_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp"
+                android:visibility="gone" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            ads:tabTextColor="@color/colorBlack"
+            ads:tabIndicatorColor="@color/intro_Gradient_start_color"
+            ads:tabSelectedTextColor="@color/intro_Gradient_start_color" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackWhite"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main_light" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/open_new_chat_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:tint="@color/colorWhite"
+        app:backgroundTint="@color/intro_Gradient_start_color"
+        app:fabSize="normal"
+        android:visibility="visible"
+        app:layout_anchor="@id/view_pager"
+        app:layout_anchorGravity="bottom|right|end"
+        app:srcCompat="@drawable/post_icon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/text_status_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:tint="@color/colorWhite"
+        app:backgroundTint="@color/intro_Gradient_end_color"
+        app:fabSize="normal"
+        android:visibility="invisible"
+        app:layout_anchor="@id/view_pager"
+        app:layout_anchorGravity="bottom|right|end"
+        app:srcCompat="@drawable/ic_edit" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

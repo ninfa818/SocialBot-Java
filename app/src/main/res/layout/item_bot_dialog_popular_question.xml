@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular Question"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/title_txt"
+        android:textSize="20sp"/>
+
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/popular_list"
+       android:layout_above="@+id/crossbtn"
+       android:layout_below="@+id/title_txt" />
+
+   <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/crossbtn"
+        android:src="@drawable/ic_cross_blue"
+        android:background="@color/fui_transparent"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:scaleType="fitStart"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+

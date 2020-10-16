@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hostcart.socialbot.fragments.MoreFragment">
+
+    <GridView
+        android:id="@+id/grd_moresection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+
+</FrameLayout>

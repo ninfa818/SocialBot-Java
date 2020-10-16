@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNew">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_sharepost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNew"
+        android:visibility="visible"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNew"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="20.8dp"
+                    android:layout_marginStart="13dp"
+                    android:background="@drawable/circle_gradient">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/share_photo"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="1.5dp"
+                        android:src="@drawable/img1"
+                        app:civ_border_width="2.5dp"
+                        android:layout_marginEnd="0.5dp"
+                        app:civ_border_color="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="25.9dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/username_actions_constraintlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/share_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:lineSpacingExtra="2.6sp"
+                            android:text="Anthony Cortez"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="13.4sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28dp"
+                            android:lineSpacingExtra="2.6sp"
+                            android:text="Public"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/share_content_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:textSize="14sp"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:hint="Say something about this..."
+                    android:textColorHint="@color/colorWhite"/>
+
+                <Button
+                    android:id="@+id/sharenow_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/white"
+                    android:background="@color/colorNewLight"
+                    android:text="share now"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</io.codetail.widget.RevealFrameLayout>

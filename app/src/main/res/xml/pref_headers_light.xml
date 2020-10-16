@@ -1,0 +1,27 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.hostcart.socialbot.activities.settings.ProfilePreferenceFragment"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/pref_header_profile_light" />
+
+    <header
+        android:fragment="com.hostcart.socialbot.activities.settings.SettingsActivity$NotificationPreferenceFragment"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/pref_header_notifications_light" />
+
+    <header
+        android:fragment="com.hostcart.socialbot.activities.settings.SettingsActivity$ChatSettingsPreferenceFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/pref_header_chat_light" />
+
+    <header
+        android:fragment="com.hostcart.socialbot.activities.settings.PrivacyPolicyFragment"
+        android:icon="@drawable/ic_policy_dark"
+        android:title="@string/privacy_policy_light" />
+
+    <header
+        android:fragment="com.hostcart.socialbot.activities.settings.AboutFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/pref_header_about_light" />
+</preference-headers>

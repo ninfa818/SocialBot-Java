@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/friend_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:background="@color/colorNew"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/friend_photo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/circle_layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_gradient">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/friend_photo_image"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="1.5dp"
+                    android:src="@drawable/img1"
+                    app:civ_border_width="2.5dp"
+                    android:layout_marginEnd="0.5dp"
+                    app:civ_border_color="@color/white"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/user_badge"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/circle_layout"
+                android:layout_marginStart="-15dp"
+                android:layout_toEndOf="@+id/circle_layout"
+                android:background="@drawable/offline_badge" />
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/friend_photo_image"-->
+<!--                xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="1.5dp"-->
+<!--                android:src="@drawable/attach_contact"/>-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/friend_photo_layout"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friend_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anthony Cortez"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/friend_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000000000000"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/user_accept_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btn_back_8_fill"
+            android:textColor="@color/white"
+            android:text="Accept"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

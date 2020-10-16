@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="8dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/img_user_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher_round"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/example_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/lbl_user_info"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/example_info"
+                    android:textColor="@color/gray_light"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_user_action"
+                android:layout_marginEnd="8dp"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_back_8_fill"
+                android:text="ADD"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/img_user_message"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_message"/>
+
+            <ImageView
+                android:id="@+id/img_user_call"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorBlack"
+                android:src="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/img_user_vcall"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorBlack"
+                android:src="@drawable/ic_video_call" />
+
+            <ImageView
+                android:id="@+id/img_user_delete"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/recv_ic_delete"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
