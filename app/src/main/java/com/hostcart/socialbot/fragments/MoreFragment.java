@@ -1,18 +1,10 @@
 package com.hostcart.socialbot.fragments;
 
-
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -42,20 +34,10 @@ public class MoreFragment extends BaseFragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_more, container, false);
-
-//        if( isOnline() ) {
-//            mWebView.loadUrl("https://ondemand.socialbot.co.za/");
-//        } else {
-//            String summary = "<html><body><font color='red'>No Internet Connection</font></body></html>";
-//            mWebView.loadData(summary, "text/html", null);
-//            Toast.makeText(getContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
-//        }
         initView(view);
         return view;
     }
