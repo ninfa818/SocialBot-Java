@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "155032163710",
+    "firebase_url": "https://socialbot83.firebaseio.com",
+    "project_id": "socialbot83",
+    "storage_bucket": "socialbot83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155032163710:android:baa4855abf503375a3cf2f",
+        "android_client_info": {
+          "package_name": "com.devlomi.fireapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155032163710-pt02uhv2u05pp4boer1tatme8867635m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devlomi.fireapp",
+            "certificate_hash": "2dca2373f4efb5aeb7b808678eecca1bd05888fc"
+          }
+        },
+        {
+          "client_id": "155032163710-m9sgovh8r88c6dn15n13h2n3mgmrtbhf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devlomi.fireapp",
+            "certificate_hash": "25c80d16234e522f7a992414a7706b4e9363946f"
+          }
+        },
+        {
+          "client_id": "155032163710-bst58sfjeh5m2shhetuo0d9em336mpca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmvRO5BQTi9smulTMklEO5-1xqiV_Pavo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155032163710-bst58sfjeh5m2shhetuo0d9em336mpca.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "155032163710-juouenj3l8kjeehstld5gegshvmfkjpc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Laodev.socialBot.SocialBot-iOS"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155032163710:android:d7e5d0f35df65e80",
+        "android_client_info": {
+          "package_name": "com.hostcart.socialbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155032163710-bed7pg2ge0l1ott0vfthl4hjmb85f1bq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hostcart.socialbot",
+            "certificate_hash": "dc749f4c025cd71db1b6cc7d2e37d6ba234786bb"
+          }
+        },
+        {
+          "client_id": "155032163710-e4duo0me0kfvtljnutuaqjd2h8atg8jm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hostcart.socialbot",
+            "certificate_hash": "a08dcf54cc711d73077cabf75f3f9bfb0df5a960"
+          }
+        },
+        {
+          "client_id": "155032163710-nhokb8f6kij87elistiq4ikne9npui54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hostcart.socialbot",
+            "certificate_hash": "a007cb36992c5684590b5e546b6669ac2c7b7c02"
+          }
+        },
+        {
+          "client_id": "155032163710-gpgb9bd69pvauqgfrfo4rbi3lmjcr4kl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hostcart.socialbot",
+            "certificate_hash": "216469bff82669153a20b974377e9723048924a6"
+          }
+        },
+        {
+          "client_id": "155032163710-ur9ndg5hsqab6bl4ivtb38lt4h0m18ms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hostcart.socialbot",
+            "certificate_hash": "bf728279c2ae8302b87c1bfbe74044f8000ce33d"
+          }
+        },
+        {
+          "client_id": "155032163710-uovst2ishcialtmau6jd784roienvsn0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hostcart.socialbot",
+            "certificate_hash": "2dca2373f4efb5aeb7b808678eecca1bd05888fc"
+          }
+        },
+        {
+          "client_id": "155032163710-n6th8b1ikc5i82d2onm845l3gtrklshu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hostcart.socialbot",
+            "certificate_hash": "25c80d16234e522f7a992414a7706b4e9363946f"
+          }
+        },
+        {
+          "client_id": "155032163710-bst58sfjeh5m2shhetuo0d9em336mpca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmvRO5BQTi9smulTMklEO5-1xqiV_Pavo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155032163710-bst58sfjeh5m2shhetuo0d9em336mpca.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "155032163710-juouenj3l8kjeehstld5gegshvmfkjpc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Laodev.socialBot.SocialBot-iOS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
