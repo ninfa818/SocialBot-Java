@@ -15,9 +15,9 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.multidex.MultiDex;
 
-import com.google.android.gms.ads.MobileAds;
 import com.hostcart.socialbot.R;
 import com.hostcart.socialbot.activities.main.MainActivity;
+import com.hostcart.socialbot.dialogs.PrivacyDialog;
 import com.hostcart.socialbot.utils.AppUtils;
 import com.hostcart.socialbot.utils.AppVerUtil;
 import com.hostcart.socialbot.utils.DetachableClickListener;
@@ -52,11 +52,21 @@ public class SplashActivity extends AppCompatActivity {
             window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
 
+        if (SharedPreferencesManager.getFlagPrivacy()) {
+            PrivacyDialog dialog = new PrivacyDialog(this);
+            dialog.show();
+            dialog.setPrivacyDialogListener(() -> {
+                SharedPreferencesManager.setFlagPrivacy(true);
+                onNextAction();
+            });
+        } else {
+            onNextAction();
+        }
+    }
+
+    private void onNextAction() {
         final Handler handler = new Handler();
         handler.postDelayed(() -> {
-            if (getResources().getBoolean(R.bool.are_ads_enabled))
-                MobileAds.initialize(SplashActivity.this, getString(R.string.admob_app_id));
-
             if (PermissionsUtil.hasPermissions(SplashActivity.this)) {
                 if (!FireManager.isLoggedIn())
                     startLoginActivity();

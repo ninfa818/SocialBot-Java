@@ -80,6 +80,14 @@ public class SharedPreferencesManager {
 
     }
 
+    public static boolean getFlagPrivacy() {
+        return mSharedPref.getBoolean("isprivacy", false);
+    }
+
+    public static void setFlagPrivacy(boolean flag) {
+        mSharedPref.edit().putBoolean("isprivacy", flag).apply();
+    }
+
     public static boolean getFlagFirst() {
         return mSharedPref.getBoolean("isfirst", false);
     }
