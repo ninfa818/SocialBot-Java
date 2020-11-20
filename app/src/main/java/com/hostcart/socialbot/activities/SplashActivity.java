@@ -52,7 +52,7 @@ public class SplashActivity extends AppCompatActivity {
             window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
 
-        if (SharedPreferencesManager.getFlagPrivacy()) {
+        if (!SharedPreferencesManager.getFlagPrivacy()) {
             PrivacyDialog dialog = new PrivacyDialog(this);
             dialog.show();
             dialog.setPrivacyDialogListener(() -> {
